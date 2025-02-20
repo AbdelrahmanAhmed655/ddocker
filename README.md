@@ -3,5 +3,10 @@
 The demo app runs across three containers:
 
 1- api - a Java REST API which serves words read from the database
+
+
 2- web - a Go web application that calls the API and builds words into sentences
+
+
+
 3- db - a Postgres database that stores words
