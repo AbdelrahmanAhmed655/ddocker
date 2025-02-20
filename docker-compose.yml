@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:10.0-alpine
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/
+
+  api:
+    build: api
+    image: abdelrhman6544931/my-repo:api
+    deploy:
+      replicas: 5
+
+  web:
+    build: web
+    image: abdelrhman6544931/my-repo:web
+    ports:
+     - "8080:80"
