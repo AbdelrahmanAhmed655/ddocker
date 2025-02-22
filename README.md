@@ -10,3 +10,11 @@ The demo app runs across three containers:
 
 
 3- db - a Postgres database that stores words
+
+
+
+Build and run in Docker Compose
+
+
+
+`docker compose up --build`
